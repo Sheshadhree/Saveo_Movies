@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.saveomovies">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SaveoMovies">
         <activity
-            android:name=".single_movie_details.SingleMovie"
+            android:name="com.example.saveomovies.ui.single_movie_details.SingleMovie"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.popular_movie.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
